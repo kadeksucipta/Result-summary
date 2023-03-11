@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.box {
+    width: 40%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    width: 60%;
+    height: 450px;
+    background: rgb(0,55,201);
+    background: linear-gradient(0deg, rgba(0,55,201,1) 0%, rgba(132,45,253,1) 100%);
+    float: left;
+    border-radius: 30px;
+}
+.oval {
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background: rgb(0,55,201);
+    background: linear-gradient(0deg, rgba(0,55,201,0.18539915966386555) 0%, rgba(9,0,195,1) 100%);
+    border-radius: 100px;
+}
+h3 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+p {
+    text-align: center;
+    color: rgb(180, 180, 180);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.p-oval {
+    color: rgb(180, 180, 180);
+    margin-top: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+}
+.h3-box {
+    color: rgb(88, 88, 88);
+    /* float: right;
+    margin-right: 30%; */
+}
+.child-box {
+    float: right;
+    margin-right: 25%;
+}
+.box-reaction {
+    float: right;
+}
+
+.reaction {
+    background-color: rgb(255, 243, 241);
+    width: 200%;
+    height: 60px;
+    color: rgb(255, 94, 94);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.ratting {
+    position: relative;
+    left: 50%;
+}
+.ratting-verbal {
+    position: relative;
+    left: 55%;
+}
+.ratting-visual {
+    position: relative;
+    left: 55%;
+}
+.child-reaction {
+    display: flex;
+    align-items: center;
+}
+
+
+.memory {
+    background-color: rgb(255, 252, 241);
+    width: 200%;
+    height: 60px;
+    color: rgb(255, 239, 94);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.child-memory {
+    display: flex;
+    align-items: center
+}
+
+.verbal {
+    background-color: rgb(241, 255, 247);
+    width: 200%;
+    height: 60px;
+    color: rgb(94, 255, 215);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.child-verbal {
+    display: flex;
+    align-items: center
+}
+
+.visual {
+    background-color: rgb(249, 241, 255);
+    width: 200%;
+    height: 60px;
+    color: rgb(94, 161, 255);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.child-visual {
+    display: flex;
+    align-items: center
+}
+
+.h5-memory {
+    color: black;
+}
+.h5-verbal {
+    color: black;
+}
+h5 {
+    float: right;
+    margin-right: 10px;
+    color: black;
+}
+.btn-continue {
+    border: none;
+    border-radius: 50px;
+    width: 200%;
+    height: 40px;
+    color: white;
+    background: rgb(0,55,201);
+    background: linear-gradient(0deg, rgba(0,55,201,1) 0%, rgba(132,45,253,1) 100%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    .box {
+        width: 85%;
+        background-color: rgb(255, 255, 255);
+        height: auto;
+    }
+    .child-box {
+        float: none;
+        margin-right: 0;
+    }
+    .reaction, .memory, .verbal{
+        width: 100%;
+    }
+    .visual {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 400px;
+    }
+    .box-reaction {
+        padding-left: 15px;
+        padding-right: 15px;
+        float: none;
+    }
+    .btn-continue  {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .h3-box {
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
